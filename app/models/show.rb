@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
   def self.highest_rating
-    self.maximum(:rating)
+    # self.maximum(:rating)
     self.maximum("rating")
   end
 
@@ -27,6 +27,6 @@ class Show < ActiveRecord::Base
   end
 
   def self.shows_by_alphabetical_order
-    
+
   end
 end
